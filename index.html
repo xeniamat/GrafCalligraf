@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>GrafCaligraf</title>
+		<meta charset="UTF-8" />
+        <meta name="description" content="Rotating Image Slider with jQuery & CSS3" />
+        <meta name="keywords" content="jquery, rotation, slider, images, slideshow, autoplay, play, pause, css3"/>
+		<meta name="author" content="Codrops" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css' />
+    </head>
+    <body>
+		
+		<!-- Аудио-проигрыватель-->
+			<audio controls loop autoplay position="fixed">
+			<source  src="audio/Potomac Fever.mp3">
+			</audio>
+			
+			<h1>Каллиграфия на все случаи жизни</h1>
+		<!-- Слайдер с фото-->
+			<div class="rm_wrapper">
+				<div id="rm_container" class="rm_container">
+					<ul>
+						<li data-images="rm_container_1" data-rotation="-15"><img src="images/1.jpg"/></li>
+						<li data-images="rm_container_2" data-rotation="-5"><img src="images/2.jpg"/></li>
+						<li data-images="rm_container_3" data-rotation="5"><img src="images/3.jpg"/></li>
+						<li data-images="rm_container_4" data-rotation="15"><img src="images/4.jpg"/></li>
+					</ul>
+					<div id="rm_mask_left" class="rm_mask_left"></div>
+					<div id="rm_mask_right" class="rm_mask_right"></div>
+					<div id="rm_corner_left" class="rm_corner_left"></div>
+					<div id="rm_corner_right" class="rm_corner_right"></div>
+					<h2>Graf Calligraf</h2>
+					<div style="display:none;">
+						<div id="rm_container_1">
+							<img src="images/1.jpg"/>
+							<img src="images/5.jpg"/>
+							<img src="images/6.jpg"/>
+							<img src="images/7.jpg"/>
+						</div>
+						<div id="rm_container_2">
+							<img src="images/2.jpg"/>
+							<img src="images/8.jpg"/>
+							<img src="images/9.jpg"/>
+							<img src="images/10.jpg"/>
+						</div>
+						<div id="rm_container_3">
+							<img src="images/3.jpg"/>
+							<img src="images/11.jpg"/>
+							<img src="images/12.jpg"/>
+							<img src="images/13.jpg"/>
+						</div>
+						<div id="rm_container_4">
+							<img src="images/4.jpg"/>
+							<img src="images/14.jpg"/>
+							<img src="images/15.jpg"/>
+							<img src="images/16.jpg"/>
+						</div>
+					</div>
+				</div>
+				<div class="rm_nav">
+					<a id="rm_next" href="#" class="rm_next"></a>
+					<a id="rm_prev" href="#" class="rm_prev"></a>
+				</div>
+				<div class="rm_controls">
+					<a id="rm_play" href="#" class="rm_play">Play</a>
+					<a id="rm_pause" href="#" class="rm_pause">Pause</a>
+				</div>
+			</div>
+		<!-- Мои услуги-->
+			<h1>Наши услуги</h1>
+			<div class="yslygi">
+				<ul>
+					<li><span class="descr"><p>Рукописные свитки</p></span><img src="images/1y.jpg" alt="Alt"></li>
+					<li><span class="descr"><p>Пригласительные на мероприятия</p></span><img src="images/2y.jpg" alt="Alt"></li>
+					<li><span class="descr"><p>Рукописные карты рассадки</p></span><img src="images/3y.jpg" alt="Alt"></li>
+					<li><span class="descr"><p>Каллиграфия в интерьере</p></span><img src="images/4y.jpg" alt="Alt"></li>
+					<li><span class="descr"><p>Боди-арт</p></span><img src="images/5y.jpg" alt="Alt"></li>
+				</ul>
+			</div>
+
+		<!-- Тест -->
+			<h1>Тест: как много вы знаете о каллиграфии?</h1>
+			<div id="container"></div>
+			
+			<h1>Свяжитесь с нами</h1>
+
+		<!-- Соц.сети-->
+			<ul id="SocSeti">
+				<li><a href="https://vk.com/graph_calligraph"><img src="images/vk.png" alt="vkontakte"></a></li>
+				<li><a href="https://www.instagram.com/graph_calligraph/"><img src="images/inst.png" alt="instagram"></a></li>
+				<li><a href="https://www.facebook.com/maxim.shepetunko?ref=br_rs"><img src="images/fb.png" alt="facebook"></a></li>
+			</ul>
+
+		<!-- Обратная связь -->
+			<div class="feedback">
+				<form name="myForm" onsubmit="return validate(this); ">
+					<table>
+						<tr><td colspan="3" align="center"></td></tr>
+						<tr><td>*Ваше имя</td><td><input type="text" name="ima" maxlength = "26"></td></tr>	
+						<tr><td>*Ваш е-mail</td><td><input type="text" name="mail" maxlength = "26"></td></tr>	
+						<tr><td>*Сообщение</td><td><textarea name="message"></textarea></td></tr>	
+						<tr><td></td><td><input  type="submit"  value="Отправить сообщение"></td></tr>	
+					</table>
+				</form>
+		<p style="text-align: center; font-size: 14px; color: black; padding: 1px;">* поля обязательные для заполнения</p>
+		</div> 
+
+		<!-- Флеш-баннер-->
+			<div id="banner" align="middle">
+				<object width="468" height="60" align="middle">
+					<param name="movie" value="audio/banner.swf" />
+					<embed src="audio/banner.swf" width="468" height="60">
+					</embed>
+				</object>
+			</div>	
+				
+		<!-- Футер-->
+		<div class="footer">
+			<a class="left" href="https://vk.com/id57786073">2016 Minsk Desighn by Kseniya Matiushevskaya</a>
+			<a href="https://vk.com/glaz_da_glaz" target="_blank">Photos by Glaz da Glaz</a>
+		</div>
+
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.transform-0.9.3.min_.js"></script>
+		<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+		<script type="text/javascript" src="js/jquery.RotateImageMenu.js"></script>
+		<script type="text/javascript" src="js/test.js"></script>
+		 
+   </body>
+</html>
